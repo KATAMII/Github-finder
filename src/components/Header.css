@@ -1,0 +1,30 @@
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black; 
+    padding: 0.5rem;  
+    gap: 18rem;
+    background-color: rgb(7, 15, 43);
+}
+.title{
+    color: #CCD2DA;
+    font-size: 0.8rem;
+}
+.by{
+    color: #CCD2DA;
+    font-size: 1rem;
+}
+.by a{
+    color: #CCD2DA;
+    font-size: 1rem;
+}
+form input{
+    padding: 0.6rem;
+    color: black;
+    font-weight: 800;
+}
+form button{
+    padding: 0.6rem; 
+}
+
