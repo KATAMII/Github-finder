@@ -5,6 +5,8 @@ import { RiGitRepositoryFill } from "react-icons/ri";
 import { IoPeopleSharp } from "react-icons/io5";
 import { VscRepoForked } from "react-icons/vsc";
 import { MdOutlineStar } from "react-icons/md";
+import { TbExternalLink } from "react-icons/tb";
+import { IoLink } from "react-icons/io5";
 import '../Home/Home.css'
 
 function Home() {
@@ -19,7 +21,7 @@ function Home() {
                 <h1 className="name">Lydia</h1>
                 <p className="nickname">Katamii</p>
                 <p className="info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat</p>
-                <button className='profbtn'>View On Github</button>
+                <button className='profbtn'><TbExternalLink />View On Github</button>
                 <p className="location"><span><VscLocation />  </span>Sans Francisco,CA</p>
                 <p className="reps"><span><RiGitRepositoryFill /> </span> 400 repository</p>
                 <p className="followers"><span><IoPeopleSharp /> </span> 233 followers</p>
@@ -43,8 +45,32 @@ function Home() {
             </div>
          </div>
        </div>
-      </div>
-    </div>
+       <div className="followerssection">
+            <h1 className="head">Followers(30)</h1>
+            <div className="followerdiv">
+                <div className="follower1">
+                    <div className="img3">
+                        <img src={profilepic} alt="follower picture" />
+                    </div>
+                    <h5 className="repotitle">Richard Maina</h5>
+                    <button className='profbtn' id='btn3'> <IoLink />  View Richard Maina</button>
+                </div>
+           </div>
+       </div>
+       <div className="followerssection">
+            <h1 className="head">Following(30)</h1>
+            <div className="followerdiv">
+                <div className="follower1">
+                    <div className="img3">
+                        <img src={profilepic} alt="follower picture" />
+                    </div>
+                    <h5 className="repotitle">Richard Maina</h5>
+                    <button className='profbtn' id='btn3'> <IoLink />  View Richard Maina</button>
+                </div>
+           </div>
+       </div>
+   </div>
+</div>
   )
 }
 

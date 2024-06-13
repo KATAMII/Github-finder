@@ -6,6 +6,9 @@
     padding: 0.5rem;  
     gap: 18rem;
     background-color: rgb(7, 15, 43);
+    position: fixed;
+    z-index: 100;
+    width: 100%;
 }
 .title{
     color: #CCD2DA;
