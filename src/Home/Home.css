@@ -1,8 +1,8 @@
 
 .profilesection {
-    margin-top: 4rem;
+    margin-top: 5rem;
     width: 55vh;
-    height: 90vh;
+    height: 85vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,7 +11,9 @@
     scrollbar-color: #F1F1E6; 
     position: fixed;
 }
-
+a{
+    text-decoration: none;
+}
 
 .profilesection::-webkit-scrollbar {
     width: 12px; 
@@ -24,7 +26,6 @@
 .profilesection::-webkit-scrollbar-thumb {
     background-color: #F1F1E6; 
     border-radius: 20px; 
-    border: 3px solid blue; 
 }
 
 .homeSection {
@@ -58,7 +59,7 @@
 .right {
     flex-basis: 71%;
     float: right;
-    margin-left: 20rem;
+    margin-left: 21rem;
     margin-top: 4rem;
 }
 
@@ -82,7 +83,8 @@
 .profbtn {
     color: white;
     background-color: rgb(7, 15, 43);
-    padding: .5rem;
+    padding: .8rem;
+    width: 45vh;
     border: none;
     border-radius: 5px;
     font-size: 1rem;
@@ -127,6 +129,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap: 2rem;
 }
 .head{
     margin: 1rem;
@@ -135,8 +138,9 @@
 .followerdiv{
     display: flex;
     justify-content: center;
-    align-items: baseline;
+    align-items: center;
     flex-wrap: wrap;
+    gap: 2rem;
 }
 .follower1{
     display: flex;
@@ -163,4 +167,5 @@
 #btn3{
     padding: .4rem;
     font-size: .8rem;
+    width: 100%;
 }

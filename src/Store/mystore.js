@@ -1,7 +1,7 @@
 
 import {create} from 'zustand';
 
-const useGithubStore = create((set) => ({
+const usemyStore = create((set) => ({
   userData: {},
   repos: [],
   followers: [],
@@ -28,4 +28,4 @@ const useGithubStore = create((set) => ({
   clearUserData: () => set({ userData: {}, repos: [], followers: [], following: [] }),
 }));
 
-export default useGithubStore;
+export default usemyStore;
