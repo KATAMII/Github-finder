@@ -66,15 +66,19 @@ function Home() {
        </div>
        
        <div className="followerssection">
-            <h1 className="head">Following(30)</h1>
-            <div className="followerdiv">
+            <h1 className="head">Following({userData.following})</h1>
+            <div className="fooo">
+            {following.map (following =>(
+            <div className="followerdiv" key={following.id}>
                 <div className="follower1">
                     <div className="img3">
-                        <img src={profilepic} alt="follower picture" />
+                        <img src={following.avatar_url} alt="follower picture" />
                     </div>
-                    <h5 className="repotitle">Richard Maina</h5>
-                    <button className='profbtn' id='btn3'> <IoLink />  View Richard Maina</button>
+                    <h5 className="repotitle">{following.login}</h5>
+                    <a href={following.following_url}><button className='profbtn' id='btn3'> <IoLink />  View Richard Maina</button></a>
                 </div>
+           </div>
+           ))}
            </div>
        </div>
    </div>
