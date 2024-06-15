@@ -12,7 +12,7 @@ import '../Home/Home.css';
 
 function Home() {
   const { userData, repos, followers, following, fetchUserData, clearUserData } = usemyStore();
-  const defautuser = 'KATAMII'
+  const defautuser = 'github'
   useEffect(()=>{
     fetchUserData(defautuser)
   }, [fetchUserData])
