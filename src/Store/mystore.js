@@ -25,7 +25,6 @@ const usemyStore = create((set) => ({
       console.error("Error fetching data:", error);
     }
   },
-  clearUserData: () => set({ userData: {}, repos: [], followers: [], following: [] }),
 }));
 
 export default usemyStore;

@@ -4,13 +4,13 @@ import usemyStore from '../Store/mystore';
 import '../components/Header.css';
 
 function Header() {
-  const [username, setUsername] = useState('Katamii');
-  const { fetchUserData, clearUserData } = usemyStore();
+  const [username, setUsername] = useState('');
+  const { fetchUserData,  } = usemyStore();
 
   const handleSearch = (e) => {
     e.preventDefault();
     if (username) {
-      clearUserData();
+      
       fetchUserData(username);
     }
   };
