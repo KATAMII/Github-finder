@@ -29,7 +29,7 @@ function Home() {
       <div className="profilesection">
         <div className="profile">
           <div className="img">
-            <img src={userData.avatar_url || profilepic} alt="profile pic" />
+            <img src={userData.avatar_url} alt="profile pic" />
           </div>
           <div className="profileinfo">
             <h1 className="name">{userData.name}</h1>

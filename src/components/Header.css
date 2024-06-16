@@ -21,6 +21,7 @@
 .by a{
     color: #CCD2DA;
     font-size: 1rem;
+    text-decoration: underline;
 }
 form input{
     padding: 0.6rem;
