@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import profilepic from '../assets/Github.jpeg';
 import { VscLocation } from "react-icons/vsc";
 import { RiGitRepositoryFill } from "react-icons/ri";
@@ -11,8 +11,8 @@ import usemyStore from '../Store/mystore';
 import '../Home/Home.css';
 
 function Home() {
-  const { userData, repos, followers, following, fetchUserData, clearUserData } = usemyStore();
-  const defautuser = 'github'
+  const { userData, repos, followers, following, fetchUserData, } = usemyStore();
+  const defautuser = 'GITHUB'
   useEffect(()=>{
     fetchUserData(defautuser)
   }, [fetchUserData])
